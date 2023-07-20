@@ -1,0 +1,2 @@
+Note:if a function or a piece of code take longer time to execute so we have to execute those code asynchronously 
+when it is taking longer time to execute
