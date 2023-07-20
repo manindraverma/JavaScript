@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onclick="console.log('body tag')">
+<h1 >Welcome to DOM!</h1>
+   <h2  id="h2-tag"><span>Heading 2</span></h2>
+   
+   <button onclick="clickHandler()">click me</button>
+
+<div style="border:1px solid black"  onclick="divClick(event)">
+
+<h1>
+    Hello DOM
+</h1>
+<button onclick="buttonClick(event)">Button</button>
+</div>
+
+<!-- <input type="text" onchange="inputEntered(event)" > -->
+
+<input type="text"  onkeyup="inputEntered(event)">
+
+<p id="data"></p>
+
+<form onsubmit="submitThis(event)">
+        <!-- dynamic validation of a form -->
+
+    <div>
+        <label for="Name">
+            <input type="text" id="Name" onkeyup="nameInput(event)">
+            <span id="errMessage"></span>
+        </label>
+    </div>
+
+    <button type="submit">Submit</button>
+
+</form>
+   <script>
+    console.log("I am Embeded script");
+    console.log(document.getElementsByTagName('h1')[0])
+   </script>
+    <script src="./index.js"></script>
+
+</body>
+</html>
